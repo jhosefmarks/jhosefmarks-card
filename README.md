@@ -15,10 +15,10 @@ npx @jhosefmarks/card
 
 Not including how to use it globally because I'm not sure why you'd want this as a global command. That'd be creepy.
 
+![Card](https://raw.githubusercontent.com/jhosefmarks/jhosefmarks-card/master/card.gif)
+
 ## Credits
 
 Forked from John Papa's https://github.com/johnpapa/johnpapa-card
-
-![Card](https://raw.githubusercontent.com/jhosefmarks/jhosefmarks-card/master/card.gif)
 
 Badges from <https://badge.fury.io/for/js>

@@ -12,31 +12,37 @@ const captains = console;
 const options = {
   padding: 1,
   margin: 1,
-  borderStyle: 'single',
+  borderStyle: 'classic',
 };
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white('John Papa /'),
-  handle: chalk.cyan('Disney Fan'),
-  work: chalk.white('Web Developer and Full Stack Architect'),
-  twitter: chalk.cyan('https://twitter.com/john_papa'),
-  github: chalk.cyan('https://github.com/johnpapa'),
-  linkedin: chalk.cyan('https://linkedin.com/in/papajohn'),
-  web: chalk.cyan('https://johnpapa.net'),
-  npx: chalk.white('npx @johnpapa/card'),
-  labelWork: chalk.white.bold('      Work:'),
-  labelTwitter: chalk.white.bold('   Twitter:'),
-  labelGitHub: chalk.white.bold('    GitHub:'),
-  labelLinkedIn: chalk.white.bold('  LinkedIn:'),
-  labelWeb: chalk.white.bold('       Web:'),
-  labelCard: chalk.white.bold('      Card:'),
+  name: chalk.white('Jhosef Marks '),
+  handle: chalk.gray('(Dev for Fun)'),
+  work: chalk.white('Research and Development Coordinator at Totvs'),
+  openSource: chalk.bold.green('https://portinari.io'),
+  medium: chalk.cyan('https://medium.com/@jhosefmarks'),
+  twitter: chalk.cyan('https://twitter.com/jhosefmarks'),
+  github: chalk.cyan('https://github.com/jhosefmarks'),
+  linkedin: chalk.cyan('https://www.linkedin.com/in/jhosef-marks-de-carvalho-1038b524'),
+  web: chalk.cyan('Comming soon'),
+  npx: chalk.white('npx @jhosefmarks/card'),
+  labelWork: chalk.white.bold('       Work:'),
+  labelOpenSource: chalk.white.bold('Open Source:'),
+  labelMedium: chalk.white.bold('     Medium:'),
+  labelTwitter: chalk.white.bold('    Twitter:'),
+  labelGitHub: chalk.white.bold('     GitHub:'),
+  labelLinkedIn: chalk.white.bold('   LinkedIn:'),
+  labelWeb: chalk.white.bold('        Web:'),
+  labelCard: chalk.white.bold('       Card:'),
 };
 
 // Actual strings we're going to output
 const newline = '\n';
 const heading = `${data.name} ${data.handle}`;
 const working = `${data.labelWork}  ${data.work}`;
+const openSource = `${data.labelOpenSource}  ${data.openSource}`;
+const medium = `${data.labelMedium}  ${data.medium}`;
 const twittering = `${data.labelTwitter}  ${data.twitter}`;
 const githubing = `${data.labelGitHub}  ${data.github}`;
 const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`;
@@ -49,11 +55,15 @@ const output = heading
   + newline
   + working
   + newline
-  + twittering
+  + openSource
   + newline
   + githubing
   + newline
+  + medium
+  + newline
   + linkedining
+  + newline
+  + twittering
   + newline
   + webing
   + newline
